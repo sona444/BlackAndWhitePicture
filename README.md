@@ -5,7 +5,7 @@ This app allows you to convert your image to a Black and White Image.
 ## Setup 
 - Clone this repository 
   
-  git clone https://github.com/sona444/Workshop-Registeration.git
+  git clone https://github.com/sona444/BlackAndWhitePicture.git
   
 - Setup the virtual environment 
      
