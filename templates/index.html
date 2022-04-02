@@ -1,0 +1,26 @@
+{% extends "layout/base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block body_class %} landing-page {% endblock body_class %}
+
+{% block content %}
+
+<main>
+<section class="register-form">
+    <div class="container form">
+    <div class="row reg-form">
+      <form id="upload-form" name="fileupload"  action = "/upload" method = "POST" enctype = "multipart/form-data">
+      <input type="file" id="uploaded" name="file">
+      <input type="submit" id="upload" value="Submit">
+      </form>
+      {% if image %}
+        <img src="{{url_for('static', filename='img/' + image)}}" class="image">
+      {% endif %}
+    </div>
+  </div>
+</section>
+</main>
+{% endblock content %}
